@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog QnA</title>
+    <style>
+        body{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            color: white;
+        }
+        div{
+            background: rgba(21, 6, 6, 0.769);
+            padding: 5px 25px;
+            border-radius: 8px;
+            margin:20px auto;
+            width: 60%;
+        }
+        h3{
+            margin-bottom: 0;
+        }
+        p{
+            margin-top: 0;
+        }
+        span{
+            font-size: 20px;
+            color:red;
+        }
+    </style>
+</head>
+<body>
+   <section>
+    <div>
+        <h3>1. Whats the difference between local storage and session storage?</h4>
+        <p>Data from session storage gets lost the moment browser is closed or web page is reloaded. But in local storage data remains till cache memory is not cleared. </p>
+    </div>
+    <div>
+        <h3>2. Whats the difference between global scope and block scope?</h4>
+        <p>
+            <span>Global scope:</span> This tells us that any variable declared outside a block ({}) can be accessed from evrywhere in the document, simply it can be accessed by everyone. <br>
+            <span>Block scope:</span> This tells us that any variable declared inside a block ({}) can be accessed only inside that block.
+        </p>
+    </div>
+    <div>
+        <h3>3. How event loop works in javascript?</h4>
+        <p>
+              Event loop is an endless loop, which waits for tasks, executes them and wait to recieve more tasks.
+             The Event Loop is a queue of callback functions. When an async function executes, the callback function is pushed into the queue. <br>
+             The event loop is a constantly running process that monitors both the callback queue and the call stack
+        </p>
+    </div>
+    <div>
+        <h3>4. Ways to get undefined</h4>
+        <ul>
+            <li>variable that is not initialized </li>
+            <li>function with no return</li>
+            <li>search a property that doesnt exist on an object</li>
+            <li>deleting an element inside an array using delete keyword, that element gets replaced by undefine element</li>
+            <li>set  variable value directly undefined etc</li>
+        </ul>
+    </div>
+   </section>
+</body>
+</html>
